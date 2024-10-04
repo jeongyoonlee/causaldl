@@ -1,0 +1,33 @@
+[project]
+name = "causaldl"
+version = "0.0.1"
+authors = [
+  { name="Jeong-Yoon Lee", email="jeongyoon.lee1@gmail.com" },
+]
+description = "A Python package for causal inference with deep learning."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "tensorflow",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/jeongyoonlee/causaldl"
+Issues = "https://github.com/jeongyoonlee/causaldl/issues"
